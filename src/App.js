@@ -1,10 +1,15 @@
 import React from 'react'
 import Home from './components/Home';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Home />
+      <Routes>
+        <Route exact path="/digital-space">
+          <Home />
+        </Route>
+      </Routes>
     </div>
   )
 }
