@@ -187,7 +187,7 @@ const Home = () => {
     ];
     const onMapClick = (area, index) => {
         if (index == 7) {
-            window.location.href = '/digital-garden'
+            window.location.href = '/digital-space/#/digital'
         }
         if (index == 8) {
             setLightMode(prevLightMode => !prevLightMode)

@@ -26,7 +26,7 @@ const AudioPlayer = (props) => {
                 ...playing {file}... &nbsp; &nbsp; &nbsp; pause?
             </h1>}
 
-                <audio id="audio" src={`/audio/${file}`}>
+                <audio id="audio" src={`./audio/${file}`}>
                     Your browser does not support the <code>audio</code> element.
                 </audio>
         </div>

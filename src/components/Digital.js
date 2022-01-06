@@ -75,7 +75,7 @@ const Digital = () => {
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover", 
             render: () => {
                 return (
-                    <img className="cursor-hover" src={Back} style={{ position: 'absolute',  width: '5vw', transform: 'rotate(90deg)' }} onClick={() => window.location.href = '/'} />
+                    <img className="cursor-hover" src={Back} style={{ position: 'absolute',  width: '5vw', transform: 'rotate(90deg)' }} onClick={() => window.location.href = '/digital-space/#/'} />
                 )
             }
     
