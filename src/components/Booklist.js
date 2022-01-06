@@ -95,7 +95,7 @@ const Booklist = (props) => {
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(
-                    authorVisible && <img style={{borderRadius: '3vh', width: '100%', height: '100%'}} src={`/authors/${authorImg}.jpeg`}/>
+                    authorVisible && <img style={{borderRadius: '3vh', width: '100%', height: '100%'}} src={`./authors/${authorImg}.jpeg`}/>
                 )
             }
         },
