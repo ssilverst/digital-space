@@ -1,15 +1,17 @@
 import React from 'react'
 import Home from './components/Home';
-import { Route, Routes } from "react-router-dom";
+import Digital from './components/Digital'
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route exact path="/digital-space">
-          <Home />
-        </Route>
-      </Routes>
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/digital-garden">
+        <Digital />
+      </Route>
     </div>
   )
 }
