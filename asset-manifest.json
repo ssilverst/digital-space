@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/digital-space/static/css/main.372c04a7.css",
-    "main.js": "/digital-space/static/js/main.ba805ba4.js",
+    "main.css": "/digital-space/static/css/main.134585aa.css",
+    "main.js": "/digital-space/static/js/main.2a3e119e.js",
     "static/js/787.e02f0f84.chunk.js": "/digital-space/static/js/787.e02f0f84.chunk.js",
     "static/media/goat-and-box.gif": "/digital-space/static/media/goat-and-box.b33128204c3e442dd2e1.gif",
     "static/media/rack.png": "/digital-space/static/media/rack.ee5cd1f7fcd041b28f58.png",
+    "static/media/portfolio_photo.png": "/digital-space/static/media/portfolio_photo.9b1df19c937fb99516d1.png",
     "static/media/the-girls.jpg": "/digital-space/static/media/the-girls.d93b1d0d9c6f1f6dfdb3.jpg",
     "static/media/video-works-icon.png": "/digital-space/static/media/video-works-icon.74f634bb74d099d68894.png",
     "static/media/unity-icon.png": "/digital-space/static/media/unity-icon.0060569c27527d16d47c.png",
@@ -41,14 +42,16 @@
     "static/media/shroomies.png": "/digital-space/static/media/shroomies.7f542e32c1326c6ea658.png",
     "static/media/back-arrow.png": "/digital-space/static/media/back-arrow.36023f993d1fad7d1da1.png",
     "static/media/dogzilla.jpg": "/digital-space/static/media/dogzilla.e19925290d386a453303.jpg",
+    "static/media/bohemian.otf": "/digital-space/static/media/bohemian.45127c359e19756b99cc.otf",
     "static/media/Grand_Aventure.otf": "/digital-space/static/media/Grand_Aventure.0b1790e26848d88f14a2.otf",
+    "static/media/halle_portfolio.jpeg": "/digital-space/static/media/halle_portfolio.8757eae7ae19486b6530.jpeg",
     "index.html": "/digital-space/index.html",
-    "main.372c04a7.css.map": "/digital-space/static/css/main.372c04a7.css.map",
-    "main.ba805ba4.js.map": "/digital-space/static/js/main.ba805ba4.js.map",
+    "main.134585aa.css.map": "/digital-space/static/css/main.134585aa.css.map",
+    "main.2a3e119e.js.map": "/digital-space/static/js/main.2a3e119e.js.map",
     "787.e02f0f84.chunk.js.map": "/digital-space/static/js/787.e02f0f84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.372c04a7.css",
-    "static/js/main.ba805ba4.js"
+    "static/css/main.134585aa.css",
+    "static/js/main.2a3e119e.js"
   ]
 }
