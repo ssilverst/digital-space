@@ -22,7 +22,7 @@ import Mushroom1 from '../assets/imgs/digital/creatures/mushies.png'
 import Mushroom2 from '../assets/imgs/digital/creatures/shroomies.png'
 
 const Digital = () => {
-    const [help, setHelp] = useState(false)
+    const [help, setHelp] = useState(true)
     const [pixelGames, setPixelGames] = useState(false)
     const [misc, setMisc] = useState(false)
     const [photoshop, setPhotoshop] = useState(false)
@@ -75,7 +75,7 @@ const Digital = () => {
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover", 
             render: () => {
                 return (
-                    <img className="cursor-hover" src={Back} style={{ position: 'absolute',  width: '5vw', transform: 'rotate(90deg)' }} onClick={() => window.location.href = '/digital-space/#/'} />
+                    <img className="cursor-hover backButton" src={Back} style={{ position: 'absolute',  width: '5vw', transform: 'rotate(90deg)' }} onClick={() => window.location.href = '/digital-space/#/'} />
                 )
             }
     
@@ -102,6 +102,7 @@ const Digital = () => {
                         <img className="cursor-hover icon squirrel" src={PixelIcon} style={{ width: '15vh' }} 
                             onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('pixelGames') }} 
                             onMouseOver={() => { setPixelGames(true) }} 
                             onMouseOut={() => { setPixelGames(false) }} />
@@ -120,6 +121,7 @@ const Digital = () => {
                         <img className="cursor-hover icon squirrel" src={PhotoshopIcon} style={{ width: '15vh' }} 
                             onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('photoshop') }} 
                             onMouseOver={() => { setPhotoshop(true) }} 
                             onMouseOut={() => { setPhotoshop(false) }} />
@@ -138,6 +140,7 @@ const Digital = () => {
                         <img className="cursor-hover icon squirrel" src={MiscIcon} style={{ width: '15vh' }} 
                         onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('misc') }} 
                         onMouseOver={() => { setMisc(true) }} 
                         onMouseOut={() => { setMisc(false) }} />
@@ -157,6 +160,7 @@ const Digital = () => {
                         <img className="cursor-hover icon icon-grow" src={VideoWork} style={{ width: '15vh' }} 
                             onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('videoWorks') }} 
                             onMouseOver={() => { setVideoworks(true) }} 
                             onMouseOut={() => { setVideoworks(false) }} />
@@ -174,6 +178,7 @@ const Digital = () => {
                         <img className="cursor-hover icon icon-grow" src={Unity} style={{ width: '15vh' }} 
                         onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('unity') }} 
                         onMouseOver={() => { setUnity(true) }} 
                         onMouseOut={() => { setUnity(false) }} />
@@ -191,6 +196,7 @@ const Digital = () => {
                         <img className="cursor-hover icon icon-grow" src={ArtProgramming} style={{ width: '23vh' }} 
                         onClick={() => {
                                 setShowTv(true)
+                                setHelp(false)
                                 setContent('artProgramming') }} 
                         onMouseOver={() => { setArtProgramming(true) }} 
                         onMouseOut={() => { setArtProgramming(false) }} />
@@ -205,6 +211,7 @@ const Digital = () => {
         if (index == 0){
             setContent('unity')
             setShowTv(true)
+            setHelp(false)
         }
     }
     return (
@@ -217,7 +224,7 @@ const Digital = () => {
                 onMapClick={onMapClick}>
             </ImageMap> }
             { help ? <Help helpText={helpText} clickingX={() => setHelp(false)}/> : null }
-            { showTv && <img className="cursor-hover" src={Back} style={{ position: 'absolute', top: 5, left: 20, width: '5vw', transform: 'rotate(90deg)' }} onClick={() => setShowTv(false)} />}
+            { showTv && <img className="cursor-hover backButton" src={Back} style={{ position: 'absolute', top: 5, left: 20, width: '5vw', transform: 'rotate(90deg)' }} onClick={() => setShowTv(false)} />}
         </div>
 
     )

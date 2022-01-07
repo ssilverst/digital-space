@@ -25,3 +25,10 @@
 .icon-change:hover{
     filter: invert(100%);
 }
+.select:hover{
+    box-sizing: border-box;
+    border: 1vw solid #7fa0f4;
+}
+.backButton:hover{
+    border: 2px solid #7fa0f4;
+}

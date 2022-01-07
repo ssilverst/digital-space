@@ -6,13 +6,13 @@ const Help = (props) => {
     console.log(props.helpText)
     const renderedText = helpText.map((sentence) => {
         return (
-            <p className="cursor" style={{ fontFamily: 'Grand_Aventure', fontSize: '1.2vw', fontWeight: '900', color: '#000', }}>
+            <p className="cursor" style={{ fontFamily: 'Bohemian', fontSize: '1.8vh', fontWeight: '900', color: '#000', }}>
                 {sentence}
             </p>
         )
     })
     return (
-        <div style={{ position: 'absolute', top: '5vh', width: '70vw', left: '15vw' }}>
+        <div className="cursor" style={{ position: 'absolute', top: '5vh', width: '70vw', left: '15vw' }}>
             <div style={{ borderLeft: '.4vw dashed #729AC9', borderRight: '.4vw dashed #F787DF', borderTop: '.4vw dashed #87F7A7', borderBottom: '.4vw dashed #8A87F7', borderRadius: "3vw", backgroundColor: '#fff', padding: '.9vw' }}>
                 {renderedText}
             </div>

@@ -13,3 +13,20 @@
     top: 0;
     left: 0;
   }
+  .image:hover {
+    border-color: #7FA0F4;
+  }
+  .frame{
+    border: .6vh dotted #ffe183;
+    transition: 1s all ease-in-out;
+  }
+  .image{
+    border: .6vh dotted #ffc40c;
+    transition: all 1s ease-in-out;
+  }
+  .frame:hover{
+    border-color:aliceblue;
+  }
+  .x-box:hover{
+    background-color: red;
+  }

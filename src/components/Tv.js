@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+import '../style/Digital.css'
 import { ImageMap } from '@qiuz/react-image-map'
 import Iframe from 'react-iframe'
 
@@ -38,12 +39,11 @@ import Sparkle from '../assets/imgs/sparkle.gif'
 
 const Tv = (props) => {
     var content = props.content
-    console.log(content)
     const [channel, setChannel] = useState(content)
     const [showVideo, setShowVideo] = useState(false)
     const [videoLink, setVideoLink] = useState('')
     const [idx, setIdx] = useState(0)
-    const [help, setHelp] = useState(false)
+    const [help, setHelp] = useState(true)
     var channels = ['unity', 'artProgramming', 'misc', 'videoWorks', 'pixelGames', 'photoshop']
     var descriptions = [
         [["The purrfect beatmaker is here! In this project, I set out to create a whimsical musical cat playground. Created in the game engine Unity, Meowmix allows users to create musical loops. Meowmix offers a wide range of percussion (cardboard boxes), sine waves (flowers), and celebrity ad libs (toys). The two cats will run to the tempo of your choosing and trigger the sounds when they walk through the items. Bonus big cats can be added to the outskirts of the scene with meows pitched to their size."], 
@@ -102,7 +102,7 @@ const Tv = (props) => {
             render: () => {
                 return (
                     <div className="cursor" style={{ display: 'flex', width: '40vw', justifyContent: 'center', height: '45vh', borderRadius: '4vh', overflow: 'hidden' }}>
-                        <div className={channel === 'photoshop' || channel === 'misc' ? 'cursor' : 'cursor-hover'}
+                        <div className={channel === 'photoshop' || channel === 'misc' ? 'cursor' : 'cursor-hover select'}
                             style={{ height: '100%', borderRadius: '4vh', width: '100%', position: 'absolute', display: 'flex', justifyContent: 'center', overflow: 'hidden', backgroundColor: 'cadetblue' }}>
                             <img className={channel === 'photoshop' || channel === 'misc' ? 'cursor' : 'cursor-hover'} style={{ height: '45vh', borderRadius: '4vh' }} src={selectedArrays[idx]} onClick={() => {
                                 if (channel == "pixelGames") {
@@ -133,17 +133,28 @@ const Tv = (props) => {
             }
         },
         {
-            "width": "6%",
-            "height": "10.596026490066226%",
-            "left": "72%",
+            "width":"55%",
+            "height":"3.5862068965517238%",
+            "left":"72%",
+            "top":"4.482758620689655%",
+            render: () => {
+                return (
+                    <img className="cursor-hover select" src={Info} style={{ borderRadius: '4vw', width: '13vw' }} onClick={() => setHelp(prevHelp => !prevHelp)} />
+                )
+            }    
+        },
+        {
+            "width": "5.7%", 
+            "height": "9.223048327137546%", 
+            "left": "71.6%", 
             "top": "19.6%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-knob",
         },
         { 
             "width": "5.7%", 
-            "height": "10.223048327137546%", 
-            "left": "72.4%", 
-            "top": "35.3%",
+            "height": "9.223048327137546%", 
+            "left": "71.6%", 
+            "top": "34.3%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-knob"
         },
         {
@@ -168,16 +179,57 @@ const Tv = (props) => {
                 )
             }
         },
+        {
+            "width":"55%",
+            "height":"3.5862068965517238%",
+            "left":"25.01937972667606%",
+            "top":"73.482758620689655%",
+            "className": "image-map__map usage-map cursor_map_span-0 cursor",
+            render: () => {
+                return (
+                    <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize: '3vw',  }}>Current channel: {channel}</h1>
+                )
+            }    
+        }, 
+        {
+            "width":"55%",
+            "height":"3.5862068965517238%",
+            "left":"83%",
+            "top":"20.483758620689655%",
+            "className": "image-map__map usage-map cursor_map_span-0 cursor",
+            render: () => {
+                return (
+                    <div style={{width: '11vw', display: 'flex', justifyContent: 'center', backgroundColor: '#bfcff9', border: '1vh solid #7fa0f4'}}>
+                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.5vw',  }}>{`<= Next Project`}</h1>
+                    </div>
+                )
+            }    
+        },
+        {
+            "width":"55%",
+            "height":"3.5862068965517238%",
+            "left":"83%",
+            "top":"36.482758620689655%",
+            render: () => {
+                return (
+                    <div style={{width: '11vw', display: 'flex', justifyContent: 'center', backgroundColor: '#bfcff9', border: '1vh solid #7fa0f4'}}>
+                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.5vw',  }}>{`<= Next Channel`}</h1>
+                    </div>
+                )
+            }    
+        },
+        
     ]
     const onMapClick = (area, index) => {
-        if (index == 1) {
+        if (index == 2) {
             setIdx(prevIdx => (prevIdx + 1) % (selectedArrays.length))
             setShowVideo(false)
         }
-        if (index == 2) {
+        if (index == 3) {
             var curr_idx = (channelIdx + 1) % channels.length
             setChannel(channels[curr_idx])
             setChannelIdx(curr_idx)
+            setShowVideo(false)
             setIdx(0)
             checkChannels()
         }
@@ -191,8 +243,6 @@ const Tv = (props) => {
                 map={mapArea}
                 onMapClick={onMapClick}>
             </ImageMap>
-            <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize: '5vh', position: 'absolute', top: '2vh', left: '42%' }}>{channel}</h1>
-            <img className="cursor-hover" src={Info} style={{ position: 'absolute', top: 10, right: 20, width: '10vw' }} onClick={() => setHelp(prevHelp => !prevHelp)} />
             {help && <Help helpText={descriptions[channelIdx][idx]} clickingX={() => setHelp(false)}/>}
         </div>
     )
