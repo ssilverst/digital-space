@@ -9,7 +9,7 @@ import XBox from './XBox'
 const About = (props) => {
     const {clickingX} = props
     return (
-        <div className="cursor" style={{ width: '98.5vw', height: '98vh', backgroundColor: '#666', position: 'absolute', opacity: '90%', top: '0', left: '0', border: '1vh dotted #7FA0F4', boxSizing: 'border-box' }}>
+        <div className="cursor" style={{ width: '100vw', height: '100vh', backgroundColor: '#666', position: 'absolute', opacity: '90%', top: '0', left: '0', border: '1vh dotted #7FA0F4', boxSizing: 'border-box' }}>
 
             <img src={Halle} style={{ display: 'inline', opacity: '100%', marginLeft: '15vw', marginTop: '5vh', width: '20vw', border: '2vh solid cornflowerblue'}} />
             <img src={Profile} style={{display: 'inline', marginLeft: '10vw', width: '30vw', border: '2vh solid cornflowerblue'}} />

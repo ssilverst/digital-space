@@ -161,7 +161,7 @@ const Home = () => {
         {
             "width": "15.75682382133995%",
             "height": "18.602941176470587%",
-            "left": "42.72285980148883%",
+            "left": "43.2285980148883%",
             "top": "24.65441176470588%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-element",
             onMouseOver: () => {
@@ -213,7 +213,7 @@ const Home = () => {
         {
             "width": "10%",
             "height": "17.830882352941178%",
-            "left": "59.3556141439206%",
+            "left": "60.3556141439206%",
             "top": "26%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-element",
             onMouseOver: () => {
@@ -305,9 +305,8 @@ const Home = () => {
             <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize: '2.5vw', position: 'absolute', top: '9.8%', left: '37.75vw' }}>welcome to my digital home</h1>
             {showPlaylist && <Playlist clickingX={() => {
                 setShowPlaylist(false)
-                setPlayAudio(false)
             }} showAudio={(title) => showAudio(title)} />}
-            {showPlaylist && playAudio && <AudioPlayer file={audioFile} />}
+            { playAudio && <AudioPlayer file={audioFile} clickingX={() => setPlayAudio(false)}/>}
 
             {showSewing && <Sewing clickingX={() => {
                 setShowSewing(false)
