@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/digital-space/static/css/main.134585aa.css",
-    "main.js": "/digital-space/static/js/main.c349aeb8.js",
+    "main.js": "/digital-space/static/js/main.b74aa1fb.js",
     "static/js/787.e02f0f84.chunk.js": "/digital-space/static/js/787.e02f0f84.chunk.js",
     "static/media/goat-and-box.gif": "/digital-space/static/media/goat-and-box.b33128204c3e442dd2e1.gif",
     "static/media/the-girls.jpg": "/digital-space/static/media/the-girls.d93b1d0d9c6f1f6dfdb3.jpg",
@@ -35,7 +35,7 @@
     "static/media/photoshop-icon.png": "/digital-space/static/media/photoshop-icon.32252f2087d86c9aee1c.png",
     "static/media/pixel-icon.png": "/digital-space/static/media/pixel-icon.2cdafbf66b6485d90101.png",
     "static/media/portfolio_photo.png": "/digital-space/static/media/portfolio_photo.7bea4f7728cf978c58cc.png",
-    "static/media/info.png": "/digital-space/static/media/info.7271e63353959f63821d.png",
+    "static/media/info.png": "/digital-space/static/media/info.809b61b14c01521680f8.png",
     "static/media/Typewriter.otf": "/digital-space/static/media/Typewriter.7dd9910b690cd1b1adbc.otf",
     "static/media/breath.jpg": "/digital-space/static/media/breath.786f2a508b62fd5c0549.jpg",
     "static/media/dogzilla.jpg": "/digital-space/static/media/dogzilla.e19925290d386a453303.jpg",
@@ -47,11 +47,11 @@
     "static/media/halle_portfolio.jpeg": "/digital-space/static/media/halle_portfolio.8757eae7ae19486b6530.jpeg",
     "index.html": "/digital-space/index.html",
     "main.134585aa.css.map": "/digital-space/static/css/main.134585aa.css.map",
-    "main.c349aeb8.js.map": "/digital-space/static/js/main.c349aeb8.js.map",
+    "main.b74aa1fb.js.map": "/digital-space/static/js/main.b74aa1fb.js.map",
     "787.e02f0f84.chunk.js.map": "/digital-space/static/js/787.e02f0f84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.134585aa.css",
-    "static/js/main.c349aeb8.js"
+    "static/js/main.b74aa1fb.js"
   ]
 }
