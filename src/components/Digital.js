@@ -31,7 +31,7 @@ const Digital = () => {
     const [videoworks, setVideoworks] = useState(false)
     const [showTv, setShowTv] = useState(false)
     const [content, setContent] = useState('unity')
-    var helpText = ["Welcome to the digital garden!", "Many of these works I\'ve created while in college and others were done to fill the void of time that came with quarantine. Amongst these works you see here are my love for pixel art games, photoshopping my pets into sceneries, and playing around with 2d and 3d image softwares.", "Generally, video projects that I made for my computer music degree are held by the raccoons and the squirrels hold all the photos/miscellaneous other things. In other words, raccoons mean serious business."]
+    var helpText = ["Welcome to the digital garden!", "Many of these works I created for college and others were done to fill the void of time that came with quarantine. Among these works you can see evidence of my love for pixel art games, photoshopping my pets into sceneries, and playing around with 2d and 3d image softwares.", "Generally, video projects that I made for my computer music degree are held by the raccoons, and the squirrels hold all the photos/miscellaneous other things. In other words, raccoons mean serious business."]
     const mapArea = [
         {
             "width": "24.330900243309003%", "height": "22.525597269624573%", "left": "38.416210462287104%",
@@ -88,7 +88,7 @@ const Digital = () => {
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(
-                    <img className="cursor-hover" src={Info} style={{ position: 'absolute', top: 10, width: '10vw' }} onClick={() => setHelp(prevHelp => !prevHelp)} />
+                    <img className="cursor-hover halle-hover" src={Info} style={{ position: 'absolute', top: 10, width: '10vw' }} onClick={() => setHelp(prevHelp => !prevHelp)} />
                 )
     
             }

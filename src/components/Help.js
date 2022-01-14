@@ -16,8 +16,8 @@ const Help = (props) => {
             <div style={{ borderLeft: '.4vw dashed #729AC9', borderRight: '.4vw dashed #F787DF', borderTop: '.4vw dashed #87F7A7', borderBottom: '.4vw dashed #8A87F7', borderRadius: "3vw", backgroundColor: '#fff', padding: '.9vw' }}>
                 {renderedText}
             </div>
-            <div className="cursor-hover" style={{ position: 'absolute', top: 0, right: 0, border: '1px solid #e99799', backgroundColor: '#e2d9f3', width: '2.5vh', height: '2.3vh', display: 'inline' }}>
-                <h1 className="cursor-hover" style={{ display: 'inline', paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#e99799', fontSize: '1.5vh', }} onClick={clickingX}>
+            <div className="cursor-hover" style={{ position: 'absolute', top: 0, right: 0, border: '.2vh solid #e99799', backgroundColor: '#e2d9f3', width: '3vh', height: '3vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <h1 className="cursor-hover" style={{ display: 'inline', paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#e99799', fontSize: '2vh', }} onClick={clickingX}>
                     &nbsp;X&nbsp;
                 </h1>
             </div>

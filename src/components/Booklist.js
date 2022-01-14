@@ -79,7 +79,7 @@ const Booklist = (props) => {
             "width":"43.17391304347826%",
             "height":"59.16981132075472%",
             "left":"5.821256038647356%",
-            "top":"24.756168359941945%",
+            "top":"13.756168359941945%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(

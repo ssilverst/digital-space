@@ -49,8 +49,8 @@ const Home = () => {
         {
             "width": "1.729528535980149%",
             "height": "1.779411764705882%",
-            "left": "38.88166873449132%",
-            "top": "20%",
+            "left": "40.88166873449132%",
+            "top": "21%",
             render: () => {
                 return (
                     <img className="cursor" src={Sparkle} style={{ width: '12vh' }} />
@@ -114,7 +114,7 @@ const Home = () => {
         },
         // Labels //
         {
-            "width":"12%",
+            "width":"20%",
             "height":"4%",
             "left":"46%",
             "top":"18%",
@@ -127,7 +127,7 @@ const Home = () => {
         {
             "width":"6%",
             "height":"4%",
-            "left":"70%",
+            "left":"72%",
             "top":"28%",
             render: () => {
                 return (
@@ -224,18 +224,6 @@ const Home = () => {
             }
         },
         {
-            "width": "14.516129032258066%",
-            "height": "20.772058823529413%",
-            "left": "9.72782258064516%",
-            "top": "54.96323529411765%",
-            "className":  "image-map__map usage-map cursor_map_span-0 ",
-            render: () => {
-                return (
-                    showSewing && displayClothing && <ClothingDisplay clothing={clothing} />
-                )
-            }
-        },
-        {
             "width": "100%",
             "height": "1%",
             "left": "1.72782258064516%",
@@ -318,6 +306,10 @@ const Home = () => {
             }} showYear={(year) => showList(year)} />}
             {showBookshelf && displayList && <Booklist year={year} />}
             {showText && <About clickingX={() => setShowText(false)}/>}
+            {showSewing && displayClothing && <ClothingDisplay clothing={clothing} 
+            clickingX={() => {
+            setDisplayClothing(false)
+            setShowSewing(false)}}/>}
         </div>
     )
 }

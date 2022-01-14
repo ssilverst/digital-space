@@ -9,13 +9,14 @@ import Info from '../assets/imgs/info.png'
 import Help from './Help'
 
 import TvDisplay from '../assets/imgs/digital-off.png'
+import Popup from './Popup'
 
 import DogHell from '../assets/imgs/digital/photoshop-pets/dogs-hell.jpg'
 import HalAbstract from '../assets/imgs/digital/photoshop-pets/halle-abstract.jpg'
 import HalSpace from '../assets/imgs/digital/photoshop-pets/halle-space.jpg'
 import GentleGiant from '../assets/imgs/digital/photoshop-pets/gentle-giant.jpg'
 import Dogzilla from '../assets/imgs/digital/photoshop-pets/dogzilla.jpg'
-import Girls from '../assets/imgs/digital/photoshop-pets/the-girls.jpg'
+import Girls from '../assets/imgs/digital/photoshop-pets/the-girls.png'
 
 import DadSucks from '../assets/imgs/digital/games/dad-sucks.gif'
 import BabyClimbMeat from '../assets/imgs/digital/games/baby-climb-meat.gif'
@@ -37,12 +38,14 @@ import GoatBox from '../assets/imgs/digital/goat-and-box.gif'
 
 import Sparkle from '../assets/imgs/sparkle.gif'
 
+
 const Tv = (props) => {
     var content = props.content
     const [channel, setChannel] = useState(content)
     const [showVideo, setShowVideo] = useState(false)
     const [videoLink, setVideoLink] = useState('')
     const [idx, setIdx] = useState(0)
+    const [popup, setPopup] = useState(true)
     const [help, setHelp] = useState(true)
     var channels = ['unity', 'artProgramming', 'misc', 'videoWorks', 'pixelGames', 'photoshop']
     var descriptions = [
@@ -60,7 +63,15 @@ const Tv = (props) => {
         ], 
         [["Dad Sucks! In this game, you play as Lizzie, the daughter of Satan himself. As expected, your dad is not the nicest and he has put you in charge of fetching all the lost souls that spilled out of the gates of hell. In this game, you collect the lost souls and dodge bullets sent by Heaven's angels all while Dad sasses you up top. Art and soundtrack by me!"],
         ["Baby Climb Meat Mountain Not Too Cold is a game created for the game jam on itch.io by the same title. In this game, you are a baby and are climbing the mouintain of play blocks to reach the coveted piece of meat at the top. Be careful though, the road ahead is dangerous and riddled with various adversaries. The temperature is controlled by the space bar. Hold it too long and the temperature rises to deadly degrees but let go to long and your baby will certainly end up with frostbite. When the temperature is not perfectly room temperature, creatures and weather will appear at different ranges of temperature. Make sure to shoot down the enemies because Baby does NOT like crowds! Reach the top and you win!"]], 
-        [["Dogs in Hell (art from Hieronymus Bosch, dogs from my mom)"], ["Halle in the Moutains (my cat)"], ["Halle in Space"], ["The Gentle Giant (named Bear)"], ["Dogzilla (named Kitty)"], ["Halle and the Girls"]]
+        [["Dogs in Hell (art from Hieronymus Bosch, dogs from my mom)"], ["Halle in the Mountains (my cat)"], ["Halle in Space"], ["The Gentle Giant (named Bear)"], ["Dogzilla (named Kitty)"], ["Halle and the Girls"]]
+    ]
+    var channelDescriptions = [
+        ["The unity channel is a compilation of the projects I have worked on in Unity, which is a game engine. You can click on the projects and it will open a video of playthroughs of my game. If you would like to play it for yourself you can send me an email @ssilverst@gmail.com and I can send you the relevant materials and instructions!"],
+        ["The art 'n programming channel is a compilation of projects I completed for my computer music classes. A lot of them deal with synchronizing visual events to auditory ones, which I do using a programming language called ChucK. ChucK allows for sound to be generated in real-time, which allows for randomized events as well as events driven by human interaction. The projects displayed here are in the form of video documentation, although I am happy to send the program files and instructions to try them out for yourself. Email me @ssilverst@gmail.com"],
+        ["The misc channel deals with things that don't go in the other buckets."],
+        ["The video works channel are a collection of the art projects I've worked on in college. The music is composed by me and they deal with generating specific emotion."],
+        ["The pixel games channel is a collection of games I've created using a software called Pyxel. You can click on any of the projects to open the Github page for them, where you can find more information of how to run the games for yourself."],
+        ["The photoshop channel is a collection of works I do in my free time. Sometimes my mom sends me photos of her dogs and I photoshop them into silly backgrounds, and other times I use my wonderful cat Halle as my muse. "]
     ]
     var [channelIdx, setChannelIdx] = useState(channels.indexOf(content))
     var selectedArrays = []
@@ -133,26 +144,26 @@ const Tv = (props) => {
             }
         },
         {
-            "width":"55%",
-            "height":"3.5862068965517238%",
-            "left":"72%",
-            "top":"4.482758620689655%",
+            "width": "8.75912408759124%", 
+            "height": "7.508532423208192%", 
+            "left": "87.3213199513382%", 
+            "top": "1.706484641638226%",
             render: () => {
                 return (
-                    <img className="cursor-hover select" src={Info} style={{ borderRadius: '4vw', width: '13vw' }} onClick={() => setHelp(prevHelp => !prevHelp)} />
+                    <img className="cursor-hover halle-hover" src={Info} style={{ position: 'absolute', top: 10, width: '10vw'  }} onClick={() => setHelp(prevHelp => !prevHelp)} />
                 )
             }    
         },
         {
-            "width": "5.7%", 
-            "height": "9.223048327137546%", 
+            "width": "7%", 
+            "height": "11%", 
             "left": "71.6%", 
             "top": "19.6%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-knob",
         },
         { 
-            "width": "5.7%", 
-            "height": "9.223048327137546%", 
+            "width": "7%", 
+            "height": "11%", 
             "left": "71.6%", 
             "top": "34.3%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover hover-knob"
@@ -194,13 +205,13 @@ const Tv = (props) => {
         {
             "width":"55%",
             "height":"3.5862068965517238%",
-            "left":"83%",
-            "top":"20.483758620689655%",
+            "left":"71%",
+            "top":"30.483758620689655%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor",
             render: () => {
                 return (
-                    <div style={{width: '11vw', display: 'flex', justifyContent: 'center', backgroundColor: '#bfcff9', border: '1vh solid #7fa0f4'}}>
-                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.5vw',  }}>{`<= Next Project`}</h1>
+                    <div style={{width: '9vw', height: '2.4vw', display: 'flex', alignItems:'center', justifyContent: 'center', backgroundColor: '#bfcff9', padding: '0px', border: '.4vh solid #7fa0f4', boxSizing: 'border-box'}}>
+                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.2vw', padding: '0px' }}>&#8679; {`Next Project`}</h1>
                     </div>
                 )
             }    
@@ -208,12 +219,12 @@ const Tv = (props) => {
         {
             "width":"55%",
             "height":"3.5862068965517238%",
-            "left":"83%",
-            "top":"36.482758620689655%",
+            "left":"71%",
+            "top":"45.482758620689655%",
             render: () => {
                 return (
-                    <div style={{width: '11vw', display: 'flex', justifyContent: 'center', backgroundColor: '#bfcff9', border: '1vh solid #7fa0f4'}}>
-                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.5vw',  }}>{`<= Next Channel`}</h1>
+                    <div style={{width: '9vw', height: '2.4vw', display: 'flex', alignItems:'center', justifyContent: 'center', backgroundColor: '#bfcff9', padding: '0px', border: '.4vh solid #7fa0f4', boxSizing: 'border-box'}}>
+                        <h1 className="cursor" style={{ fontFamily: 'Grand_Aventure', color: '#34744e', fontSize: '1.2vw', padding: '0px' }}>&#8679; {`Next Channel`}</h1>
                     </div>
                 )
             }    
@@ -224,6 +235,7 @@ const Tv = (props) => {
         if (index == 2) {
             setIdx(prevIdx => (prevIdx + 1) % (selectedArrays.length))
             setShowVideo(false)
+            setHelp(true)
         }
         if (index == 3) {
             var curr_idx = (channelIdx + 1) % channels.length
@@ -232,6 +244,8 @@ const Tv = (props) => {
             setShowVideo(false)
             setIdx(0)
             checkChannels()
+            setHelp(true)
+            setPopup(true)
         }
     }
     return (
@@ -244,6 +258,7 @@ const Tv = (props) => {
                 onMapClick={onMapClick}>
             </ImageMap>
             {help && <Help helpText={descriptions[channelIdx][idx]} clickingX={() => setHelp(false)}/>}
+            {popup && <Popup popupText={channelDescriptions[channelIdx]}  channelIdx={channelIdx} clickingX={() => setPopup(false)} />}
         </div>
     )
 }

@@ -14,16 +14,31 @@
     border: 4px solid white;
     border-radius:12px;
 }
+.hover-knob{
+    transition: .5s all ease-in-out
+}
 .hover-knob:hover{
-    border: 1vw solid #bcbbff;
-    border-radius:30vh;
+    background-color: white;
+    opacity: 60%;
+    border-radius:30vh; 
 }
 .test {
     background-color: purple;
 }
+.close-text:hover{
+    border-radius: 4vh;
+    background-color: #7fa0f4;
+}
 .xBox:hover {
     background-color: black;
     border-color: pink;
+}
+.halle-hover {
+    transition: background-color .4s ease-in-out;
+    border-radius: 20vh;
+}
+.halle-hover:hover{
+    background-color: #7fa0f4;
 }
 @font-face {
     font-family: 'Grand_Aventure';
