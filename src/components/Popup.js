@@ -19,16 +19,11 @@ const Popup = (props) => {
         )
     })
     return (
-        <div className="cursor" style={{ position: 'absolute', top: '5vh', opacity: '98%', width: '80vw', height: '90vh', left: '10vw', border: '1vh dotted #7FA0F4', boxSizing: 'border-box', borderRadius: "3vw", backgroundColor: '#eee', padding: '.9vw', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <div style={{ width: '50%' }}>
+        <div className="cursor-hover" style={{ position: 'absolute', top: '5vh', opacity: '98%', width: '80vw', height: '90vh', left: '10vw', border: '1vh dotted #7FA0F4', boxSizing: 'border-box', borderRadius: "3vw", backgroundColor: '#eee', padding: '.9vw', display: 'flex', justifyContent: 'center', alignItems: 'center'}} onClick={clickingX}>
+            <div style={{ width: '50%' }} >
                 {renderedText}
             </div>
             <img src={channelImages[channelIdx]} style={{width: '30vh', height: '40vh'}} />
-            <div className="cursor-hover" style={{ position: 'absolute', top: '-2vh', right: '-2vh', border: '.3vh solid #e99799', backgroundColor: '#e2d9f3', width: '6vh', height: '6vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <h1 className="cursor-hover" style={{ display: 'inline', paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#e99799', fontSize: '4vh', }} onClick={clickingX}>
-                    &nbsp;X&nbsp;
-                </h1>
-            </div>
         </div>
     )
 }
