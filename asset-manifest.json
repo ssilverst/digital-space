@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/digital-space/static/css/main.134585aa.css",
-    "main.js": "/digital-space/static/js/main.b74aa1fb.js",
+    "main.css": "/digital-space/static/css/main.f419ae38.css",
+    "main.js": "/digital-space/static/js/main.c291cec0.js",
     "static/js/787.e02f0f84.chunk.js": "/digital-space/static/js/787.e02f0f84.chunk.js",
     "static/media/goat-and-box.gif": "/digital-space/static/media/goat-and-box.b33128204c3e442dd2e1.gif",
-    "static/media/the-girls.jpg": "/digital-space/static/media/the-girls.d93b1d0d9c6f1f6dfdb3.jpg",
     "static/media/digital.png": "/digital-space/static/media/digital.ac39b1cacd192932f86c.png",
     "static/media/ias.png": "/digital-space/static/media/ias.96c2648896b8b36cd831.png",
     "static/media/digital-off.png": "/digital-space/static/media/digital-off.01abf70bf2ce9eabf829.png",
@@ -12,6 +11,7 @@
     "static/media/room-dark.png": "/digital-space/static/media/room-dark.c903cbbcb8bf19cc349c.png",
     "static/media/space_future.png": "/digital-space/static/media/space_future.445a5575d7d8e00c0d78.png",
     "static/media/baby-climb-meat.gif": "/digital-space/static/media/baby-climb-meat.d7f11c121fb05d054952.gif",
+    "static/media/the-girls.png": "/digital-space/static/media/the-girls.d67491ec88f2b337c807.png",
     "static/media/meowmix.png": "/digital-space/static/media/meowmix.ff770d76520c900f9118.png",
     "static/media/homealone.png": "/digital-space/static/media/homealone.2a183e375881a862b619.png",
     "static/media/halle-abstract.jpg": "/digital-space/static/media/halle-abstract.91c6a63f2c253047baac.jpg",
@@ -46,12 +46,12 @@
     "static/media/shroomies.png": "/digital-space/static/media/shroomies.f281f719e6d5dea0ff4f.png",
     "static/media/halle_portfolio.jpeg": "/digital-space/static/media/halle_portfolio.8757eae7ae19486b6530.jpeg",
     "index.html": "/digital-space/index.html",
-    "main.134585aa.css.map": "/digital-space/static/css/main.134585aa.css.map",
-    "main.b74aa1fb.js.map": "/digital-space/static/js/main.b74aa1fb.js.map",
+    "main.f419ae38.css.map": "/digital-space/static/css/main.f419ae38.css.map",
+    "main.c291cec0.js.map": "/digital-space/static/js/main.c291cec0.js.map",
     "787.e02f0f84.chunk.js.map": "/digital-space/static/js/787.e02f0f84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.134585aa.css",
-    "static/js/main.b74aa1fb.js"
+    "static/css/main.f419ae38.css",
+    "static/js/main.c291cec0.js"
   ]
 }
