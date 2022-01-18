@@ -14,7 +14,7 @@ const ClothingDisplay = (props) => {
                 setClothIdx((clothIdx+1)%clothing_files.length)
             }}
             />
-            <div className="cursor-hover close-text" style={{display:'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'white', border: '1vh solid black', position: 'absolute', right: '3vh', top: '1vh', width: '4vh', height: '4vh'}}>
+            <div className="cursor-hover close-text" style={{display:'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'white', border: '1vh solid black', position: 'absolute', right: '3vh', top: '1vh', width: '4vh', height: '4vh'}} onClick={clickingX}>
                 <h1  style={{fontFamily: 'Bohemian', fontSize: '3vh', color: 'black'}} onClick={clickingX}>x</h1>
             </div>
             <h1 className="cursor" style={{position: 'absolute', right: '4vh', bottom: '1vh', fontFamily: 'Bohemian', fontSize: '3vh', color: 'white'}}>click for next</h1>
