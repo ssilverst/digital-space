@@ -10,6 +10,14 @@
     border-radius: 6vh;
     transition: 1s all ease-in-out
 }
+.mush-icon {
+    border-radius: 6vh;
+    transition: 1s all ease-in-out
+}
+.mush-icon-grow:hover{
+    transform: scale(1.2)
+
+}
 .icon:hover {
     background-color: rgb(255,255,255,0.5);;
 }
@@ -39,4 +47,10 @@
 }
 .backButton:hover{
     background-color:#7fa0f4;
+}
+.chosen {
+    color: red;
+}
+.regular {
+    color: #ffc40c;
 }

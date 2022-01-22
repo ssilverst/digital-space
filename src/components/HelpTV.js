@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/Base.css'
 
-const Help = (props) => {
+const HelpTV = (props) => {
     const { helpText, clickingX } = props
     console.log(props.helpText)
     const renderedText = helpText.map((sentence) => {
@@ -12,7 +12,7 @@ const Help = (props) => {
         )
     })
     return (
-        <div className="cursor-hover" style={{ position: 'absolute', top: '5vh', width: '70vw', left: '15vw' }}>
+        <div className="cursor-hover" style={{ position: 'absolute', bottom: '5vh', width: '70vw', left: '15vw' }}>
             <div className="cursor-hover"style={{ borderLeft: '.4vw dashed #729AC9', borderRight: '.4vw dashed #F787DF', borderTop: '.4vw dashed #87F7A7', borderBottom: '.4vw dashed #8A87F7', borderRadius: "3vw", backgroundColor: '#fff', padding: '.9vw'}} onClick={clickingX}>
                 {renderedText}
             </div>
@@ -20,4 +20,4 @@ const Help = (props) => {
     )
 }
 
-export default Help;
+export default HelpTV;

@@ -13,7 +13,7 @@ const Popup = (props) => {
     console.log(props.popupText)
     const renderedText = popupText.map((sentence) => {
         return (
-            <p className="cursor" style={{ fontFamily: 'Bohemian', fontSize: '1.8vh', fontWeight: '900', color: '#000', }}>
+            <p className="cursor-hover" style={{ fontFamily: 'Bohemian', fontSize: '1.8vh', fontWeight: '900', color: '#000', }}>
                 {sentence}
             </p>
         )

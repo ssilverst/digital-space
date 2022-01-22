@@ -40,19 +40,19 @@ const Digital = () => {
         },
         {
             "width": "4.622871046228711%", "height": "16.723549488054605%", "left": "61.47703771289538%", "top": "74.4027303754266%",
-            "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
+            "className": "image-map__map usage-map cursor_map_span-0 cursor",
             render: () => {
                 return (
-                    <img className="cursor-hover icon icon-change" src={Mushroom2} style={{ width: '8vh' }} />
+                    <img className="mush-icon icon-change" src={Mushroom2} style={{ width: '8vh' }} />
                 )
             }
         },
         {
             "width": "6.569343065693431%", "height": "16.040955631399317%", "left": "29.413777372262807%", "top": "76.45051194539249%",
-            "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
+            "className": "image-map__map usage-map cursor_map_span-0 cursor",
             render: () => {
                 return (
-                    <img className="cursor-hover icon icon-change" src={Mushroom2} style={{ width: '8vh', transform: 'scaleX(-1)' }} />
+                    <img className="mush-icon icon-change" src={Mushroom2} style={{ width: '8vh', transform: 'scaleX(-1)' }} />
                 )
             }
         },
@@ -61,11 +61,11 @@ const Digital = () => {
             "height":"16.70103092783505%",
             "left":"82.01286764705884%",
             "top":"80.41237113402062%",
-            "className": "image-map__map usage-map cursor_map_span-0 cursor-hover", 
+            "className": "image-map__map usage-map cursor_map_span-0 cursor", 
             render: () => {
                 return(
                     <div>
-                        <img className="cursor-hover icon icon-grow" src={Mushroom1} style={{ position: 'absolute', width: '20vh' }} />
+                        <img className="mush-icon mush-icon-grow" src={Mushroom1} style={{ position: 'absolute', width: '20vh' }} />
                     </div>
                 )
             }
@@ -224,7 +224,9 @@ const Digital = () => {
                 onMapClick={onMapClick}>
             </ImageMap> }
             { help ? <Help helpText={helpText} clickingX={() => setHelp(false)}/> : null }
-            { showTv && <img className="cursor-hover backButton" src={Back} style={{ position: 'absolute', top: 5, left: 20, width: '5vw', transform: 'rotate(90deg)' }} onClick={() => setShowTv(false)} />}
+            { showTv && <img className="cursor-hover backButton" src={Back} style={{ position: 'absolute', top: 5, left: 20, width: '5vw', transform: 'rotate(90deg)' }} onClick={() => {
+                setHelp(true)
+                setShowTv(false)}} />}
         </div>
 
     )

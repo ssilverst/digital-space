@@ -18,7 +18,7 @@ const Bookshelf = (props) => {
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(
-                    <div className="cursor-hover" style={{ position: 'relative', border: '1px solid #455a25', backgroundColor: '#c5dca1', width: '4.5vh', height: '1.5vh', display: 'inline' }}>
+                    <div className="cursor-hover close-text" style={{ position: 'relative', border: '1px solid #455a25', backgroundColor: '#c5dca1', width: '4vh', height: '4vh', display: 'flex', justifyContent: 'center', alignItems: 'center',  }}onClick={clickingX}>
                         <h1 className="cursor-hover" style={{ display: 'inline', paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#455a25', fontSize: '1.5vh', }} onClick={clickingX}>
                             &nbsp;X&nbsp;
                         </h1>
@@ -29,12 +29,12 @@ const Bookshelf = (props) => {
         {
             "width": "50.25%",
             "height": "30.67790262172284%",
-            "left": "10%",
+            "left": "50%",
             "top": "50.490636704119854%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return (
-                    <div style={{ width: '100%', height: '100%'}} onMouseOver={() => setShow2021(true)} onMouseOut={() => setShow2021(false)} onClick={() => showYear(2021)}>
+                    <div className="books" style={{ width: '100%', height: '100%'}} onMouseOver={() => setShow2021(true)} onMouseOut={() => setShow2021(false)} onClick={() => showYear(2021)}>
                     </div>
                 )
             } 
@@ -42,24 +42,24 @@ const Bookshelf = (props) => {
         {
             "width":"3.4739454094292808%",
             "height":"4.149377593360995%",
-            "left":"40%",
-            "top":"55%",
+            "left":"55%",
+            "top":"50%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(
-                    show2021 ? <h1 style={{fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize:"1.5vh"}}>2021!</h1> : null
+                    show2021 ? <h1 style={{fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize:"2.5vh"}}>2021!</h1> : null
                 )
             }
         },
         {
-            "width": "20.25%",
+            "width": "40.25%",
             "height": "40.67790262172284%",
-            "left": "35%",
-            "top": "5.3%",
+            "left": "55%",
+            "top": "10%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return (
-                    <div style={{ width: '100%', height: '100%'}} onMouseOver={() => setShow2020(true)} onMouseOut={() => setShow2020(false)} 
+                    <div className="books" style={{ width: '100%', height: '100%'}} onMouseOver={() => setShow2020(true)} onMouseOut={() => setShow2020(false)} 
                         onClick={() => {
                             showYear(2020)
                         }}
@@ -71,12 +71,12 @@ const Bookshelf = (props) => {
         {
             "width":"3.4739454094292808%",
             "height":"4.149377593360995%",
-            "left":"28%",
+            "left":"60%",
             "top":"9%",
             "className": "image-map__map usage-map cursor_map_span-0 cursor-hover",
             render: () => {
                 return(
-                    show2020 ? <h1 style={{fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize:"1.5vh"}}>2020!</h1> : null
+                    show2020 ? <h1 style={{fontFamily: 'Grand_Aventure', color: '#ffc40c', fontSize:"2.5vh"}}>2020!</h1> : null
                 )
             }
         },

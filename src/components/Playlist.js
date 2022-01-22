@@ -17,9 +17,9 @@ const Playlist = (props) => {
     })
     return (
         <div className="cursor" style={{ position: 'absolute', top: '5vh', width: '30vw', left: '5vw' }}>
-            <div className="cursor" style={{ width: '100%', height: '3.5vh', backgroundColor: '#e091a7', border: '1px solid #ab283f' }}>
-                <div className="cursor-hover" style={{ marginLeft: '28vw', top: '.5vh', position: 'relative', border: '1px solid #ab283f', backgroundColor: '#e091a7', width: '4.5vh', height: '1.5vh', display: 'inline' }}>
-                    <h1 className="cursor-hover" style={{ display: 'inline', paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#ab283f', fontSize: '1.5vh', }}
+            <div className="cursor" style={{ width: '100%', height: '4vh', backgroundColor: '#e091a7', border: '1px solid #ab283f' }}>
+                <div className="cursor-hover close-text" style={{ marginLeft: '27.5vw', top: '0vh', position: 'relative', border: '1px solid #ab283f', backgroundColor: '#e091a7', width: '4vh', height: '4vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                    <h1 className="cursor-hover" style={{ paddingRight: '2px', paddingLeft: '2px', fontFamily: 'Typewriter', fontWeight: 'bolder', color: '#ab283f', fontSize: '1.5vh', }}
                         onClick={clickingX}>
                         &nbsp;X&nbsp;
                     </h1>

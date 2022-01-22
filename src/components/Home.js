@@ -304,7 +304,7 @@ const Home = () => {
                 setShowBookshelf(false)
                 setDisplayList(false)
             }} showYear={(year) => showList(year)} />}
-            {showBookshelf && displayList && <Booklist year={year} />}
+            {showBookshelf && displayList && <Booklist year={year} clickingX={() => setDisplayList(false)} />}
             {showText && <About clickingX={() => setShowText(false)}/>}
             {showSewing && displayClothing && <ClothingDisplay clothing={clothing} 
             clickingX={() => {

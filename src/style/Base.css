@@ -25,8 +25,20 @@
 .test {
     background-color: purple;
 }
+.close-text{
+    transition: .2s all linear;
+}
 .close-text:hover{
     border-radius: 4vh;
+    transform: scale(1.5);
+    background-color: #7fa0f4;
+}
+.close-text-small{
+    transition: .2s all linear;
+}
+.close-text-small:hover{
+    border-radius: 4vh;
+    transform: scale(3.5);
     background-color: #7fa0f4;
 }
 .xBox:hover {
@@ -39,6 +51,15 @@
 }
 .halle-hover:hover{
     background-color: #7fa0f4;
+}
+.books:hover{
+    border: 1vh solid oldlace;
+}
+.titles{
+    color: #bf8959;
+}
+.titles:hover{
+    color: #7fa0f4
 }
 @font-face {
     font-family: 'Grand_Aventure';
